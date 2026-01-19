@@ -1,13 +1,22 @@
-# Welcome to your new ignited app!
+# Ignite The Beam
 
-> The latest and greatest boilerplate for Infinite Red opinions
+> Sacramento Kings fan app. Welcome to basketball hell 🏀👑
 
-This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
+A React Native app built with the Ignite boilerplate featuring a purple theme and bottom tab navigation for Sacramento Kings fans to stay connected with their team.
 
-- [Quick start documentation](https://github.com/infinitered/ignite/blob/master/docs/boilerplate/Boilerplate.md)
-- [Full documentation](https://github.com/infinitered/ignite/blob/master/docs/README.md)
+This project is built using [Ignite](https://github.com/infinitered/ignite), the battle-tested React Native boilerplate from [Infinite Red](https://infinite.red).
 
-## Getting Started
+## 🎨 Features
+
+- **Purple Theme**: Custom purple color scheme applied throughout the app with reusable color tokens
+- **Bottom Tab Navigation**: Four main screens accessible via bottom navigation bar
+  - **Home**: Main landing screen
+  - **Good News**: Uplifting and inspiring content
+  - **Beam**: Share positivity and brighten someone's day
+  - **More**: Additional features and settings
+- **Modern Architecture**: Built on Ignite's proven architecture with TypeScript, React Navigation, and Expo
+
+## 🚀 Getting Started
 
 ```bash
 npm install --legacy-peer-deps
@@ -67,6 +76,36 @@ Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup)
 ### Upgrade Ignite boilerplate
 
 Read our [Upgrade Guide](https://ignitecookbook.com/docs/recipes/UpdatingIgnite) to learn how to upgrade your Ignite project.
+
+## 📁 Project Structure
+
+```
+app/
+├── screens/           # Screen components
+│   ├── HomeScreen.tsx
+│   ├── GoodNewsScreen.tsx
+│   ├── BeamScreen.tsx
+│   └── MoreScreen.tsx
+├── navigators/        # Navigation configuration
+│   ├── AppNavigator.tsx
+│   ├── MainNavigator.tsx (Bottom tabs)
+│   └── navigationTypes.ts
+├── theme/            # Theme and styling
+│   ├── colors.ts     # Purple theme colors
+│   ├── colorsDark.ts # Dark mode purple colors
+│   └── typography.ts
+└── components/       # Reusable components
+```
+
+## 🎨 Theme Customization
+
+The app uses a purple color scheme defined in `app/theme/colors.ts` and `app/theme/colorsDark.ts`. Key colors include:
+
+- **Primary**: Purple shades (#9C27B0 to #F3E5F5)
+- **Secondary**: Complementary purple tones
+- **Accent**: Accent purple variations
+
+All colors are accessible through the theme context and automatically adapt to light/dark mode.
 
 ## Community
 
